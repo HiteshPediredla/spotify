@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 48px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand img {
+  width: 44px;
+  padding-right: 8px;
+
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container {
+  min-height: 69.5vh;
+  background-color: black;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  margin: 20px auto;
+  width: 72%;
+  border-radius: 14px;
+ padding: 24px;
+ background-image: url("bg.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.bottom {
+position: sticky;
+bottom: 0;
+height: 80px;
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 80vw;
+}
+
+.songItemContainer{
+  margin-top: 20px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+
+}
+
+.icons i {
+  margin: 0 10px;
+}
+ .songItem img{
+   width: 43px;
+   margin: 0 23px;
+   border-radius: 50%;
+ }
+
+ .timeStamp {
+   margin: 0 23px;
+
+ }
+
+ .timeStamp i {
+    cursor: pointer;
+ }
+
+ .songInfo {
+   position: absolute;
+   left: 10vw;
+ }
+ .songInfo img{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+ }
+
+ #myProgressBar {
+   -webkit-appearance: none;
+
+   height: 6px;
+   cursor: pointer;
+   margin-top: 10px;
+ }
+
+ #myProgressBar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   background-color: black;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+
+ }
